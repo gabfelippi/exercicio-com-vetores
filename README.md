@@ -1,4 +1,4 @@
-# exercicio-com-vetores
+# Exercício com vetores (loja de celulares)
 Exercício matemático para calcular o produto interno de 2 vetores (estoque e preços) de uma loja com 3 tipos de celulares
 
 Uma determinada loja possui 3 tipos de celulares, com suas quantidades e preços correspondentes
