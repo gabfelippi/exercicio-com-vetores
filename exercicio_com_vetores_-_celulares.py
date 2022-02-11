@@ -14,27 +14,28 @@ precos = [1903.65, 729.75, 5069.4] #preço de cada celular
 valor_estoque_celular = [(a * b) for a, b in zip(estoque, precos)] #valor total de cada celular conforme o estoque
 valor_total_estoque = sum(valor_estoque_celular) #valor total do estoque de todos os celulares
 
-print("Valor total do estoque de cada celular: ", valor_estoque_celular)
-print("Valor total de todo o estoque: ", valor_total_estoque)
-print()
+print(f"""Valor total do estoque de cada celular: {valor_estoque_celular}
+Valor total de todo o estoque: {valor_total_estoque}
+""")
 
 #2 dobrando o valor do estoque
 valor_estoque2_celular_prova = [(2 * a * b) for a, b in zip(estoque, precos)] #valor total de cada celular conforme o estoque DOBRADO
 valor_total_estoque2_prova = sum(valor_estoque2_celular_prova) #valor total do estoque DOBRADO de todos os celulares
 
-print("Prova do valor total do estoque DOBRADO de cada celular: ", valor_estoque2_celular_prova)
-print("Prova do valor total de todo o estoque DOBRADO: ", valor_total_estoque2_prova,)
-print()
+print(f"""Prova do valor total do estoque DOBRADO de cada celular: {valor_estoque2_celular_prova}
+Prova do valor total de todo o estoque DOBRADO: {valor_total_estoque2_prova}
+""")
 
 #2 dobrando o valor do estoque total (ou produto interno do #2 anterior)
 valor_total_estoque2 = valor_total_estoque * 2 #calculando o produto interno do estoque DOBRADO apenas duplicando o produto interno de 1 ao invés de duplicar o estoque de 1
 
-print("Valor total de todo o estoque DOBRADO duplicando o p.i. do estoque normal: ", valor_total_estoque2)
-print()
+print(f"""Valor total de todo o estoque DOBRADO duplicando o p.i. do estoque normal: {valor_total_estoque2}
+""")
 
 #2 dobrando o valor dos preços unitários
 valor_estoque3_celular = [(a * (2 * b)) for a, b in zip(estoque, precos)]
 valor_total_estoque3 = sum(valor_estoque3_celular)
 
-print("Valor total do estoque de cada celular com o valor unitário DOBRADO: ", valor_estoque3_celular)
-print("Valor total de todo o estoque com o valor unitário DOBRADO: ", valor_total_estoque3)
+print(f"""Valor total do estoque de cada celular com o valor unitário DOBRADO: {valor_estoque3_celular}
+Valor total de todo o estoque com o valor unitário DOBRADO: {valor_total_estoque3}
+""")
